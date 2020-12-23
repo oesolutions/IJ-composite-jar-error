@@ -1,0 +1,10 @@
+import java.text.SimpleDateFormat
+
+plugins {
+    id 'java'
+}
+
+group = 'example'
+version = "1.0.${new SimpleDateFormat( "yyyyMMddHHmmss" ).format( new Date().getTime() )}"
+println "${name}'s version is '${version}'"
+
